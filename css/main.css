@@ -1,0 +1,228 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 130px;
+    background-color: #086A87;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.heaker, a {
+    text-decoration-line: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.wonder {
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.section1 {
+    width: 100%;
+    height: 75vh;
+    background-color: pink;
+    background: url("https://www.starbucks.co.kr/common/img/main/fav_prod_bg_new.jpg") fixed;
+}
+
+.intro {
+    position: absolute;
+    top: 25vw;
+    left: 100px;
+    text-align: left;
+    font-size: 40px;
+    animation: slide 4s ease-out;
+    color: white;
+    font-weight: 700;
+}
+
+.section2 {
+    width: 100%;
+    height: 45vh;
+    background-color: antiquewhite;
+    color: black;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.section3 {
+    width: 100%;
+    height: 45vh;
+    background-color: #086A87;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background-color: antiquewhite;
+    display: flex;
+}
+
+.information {
+    width: 80%;
+    height: 150px;
+    background-color: white;
+    text-align: left;
+    color: black;
+}
+
+.sns {
+    width: 20%;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sns1 {
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#087e87;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #main {
+    display: none;
+  }
+  
+@keyframes slide {
+    from {
+        left: -100px;
+        opacity: 0;
+    }
+
+    to {
+        left: 100px;
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    from {
+        left: 100px;
+        opacity: 1;
+    }
+
+    to {
+        left: -100px;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        display: none;
+    }
+
+    .section1 {
+        width: 100%;
+        height: 75vh;
+        background-color: pink;
+          background: url("https://image.istarbucks.co.kr/img/event/2022/main_coffee_img_221114_1.jpg") fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .intro {
+        margin-top: 180px;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: 230px;
+    }
+
+    .information {
+        width: 100%;
+    }
+
+    .sns {
+        width: 100%;
+    }
+
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+
+    .wonder1 {
+        color: white;
+        font-size: 30px;
+        font-weight: 900;
+        margin-top: 40px;
+        margin-left: 10vw;
+        margin-right: 5vw;
+    }
+
+    #main {
+        transition: margin-left .5s;
+        padding: 16px;
+        background-color: #086A87;
+        color: white;
+        position: fixed;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        margin-left: -10px;
+      }
+
+      #mySidenav {
+        z-index: 999;
+      }
+}
