@@ -1,6 +1,6 @@
 .carousel {
   position: relative;
-  height: 45vh;
+  height: 55vh;
   overflow: hidden;
   background-color: #086A87;
 }
@@ -10,8 +10,8 @@
   --width: clamp(150px, 23vh, 300px);
   --height: clamp(200px, 30vh, 400px);
   --x: calc(var(--active) * 800%);
-  --y: calc(var(--active) * 0%);
-  --rot: calc(var(--active) * 0deg);
+  --y: calc(var(--active) * 100%);
+  --rot: calc(var(--active) * 120deg);
   --opacity: calc(var(--zIndex) / var(--items) * 3 - 1.5);
   overflow: hidden;
   position: absolute;
@@ -77,4 +77,11 @@
   -o-object-fit: cover;
      object-fit: cover;
   pointer-events: none;
+}
+
+@media screen and (max-width: 950px) {
+  .carousel-item {
+    --width: clamp(150px, 15vh, 300px);
+    --height: clamp(200px, 23vh, 400px);
+  }
 }/*# sourceMappingURL=style.css.map */

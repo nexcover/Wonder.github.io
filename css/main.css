@@ -1,22 +1,36 @@
 body {
-    margin: 0px;
+    margin: 0;
     font-family: sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+p {
+    margin: 0px;
+}
+
+h1 {
+    margin: 0px;
 }
 
 .header {
     width: 100%;
-    height: 130px;
+    height: 120px;
     background-color: #086A87;
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 500;
 }
 
-.heaker, a {
+.header p a {
+    margin-left: 20px;
+}
+
+.header a {
     text-decoration-line: none;
     color: white;
-    margin-left: 20px;
     font-size: 20px;
     font-weight: 500;
 }
@@ -27,6 +41,12 @@ body {
     font-weight: 900;
 }
 
+.wonder1 {
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+}
+
 .logo {
     width: 100px;
     height: 100px;
@@ -34,15 +54,17 @@ body {
 
 .section1 {
     width: 100%;
-    height: 75vh;
+    height: 85vh;
+    margin: 0px;
     background-color: pink;
-    background: url("https://www.starbucks.co.kr/common/img/main/fav_prod_bg_new.jpg") fixed;
+    background: url(../img/cafe1.jpg) fixed;
+    background-size: cover;
 }
 
 .intro {
     position: absolute;
-    top: 25vw;
-    left: 100px;
+    top: 30vw;
+    left: 50px;
     text-align: left;
     font-size: 40px;
     animation: slide 4s ease-out;
@@ -52,47 +74,123 @@ body {
 
 .section2 {
     width: 100%;
-    height: 45vh;
-    background-color: antiquewhite;
-    color: black;
-    padding-top: 3%;
+    height: 65vh;
+    background-image: url(../img/cafe2.jpg);
+    background-size: cover;
+    color: white;;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 p {
+    margin-top: 20px;
 }
 
 .section3 {
     width: 100%;
-    height: 45vh;
+    height: 55vh;
     background-color: #086A87;
 }
 
 .footer {
     width: 100%;
-    height: 150px;
-    background-color: antiquewhite;
+    height: 220px;
     display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
 }
 
-.information {
-    width: 80%;
-    height: 150px;
-    background-color: white;
-    text-align: left;
-    color: black;
+#footer {
+    width: 95%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: black; */
 }
 
-.sns {
-    width: 20%;
-    height: 150px;
-    background-color: white;
+.name {
+    width: 100%;
+    height: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    background-color: antiquewhite;
 }
 
-.sns1 {
-    width: 50px;
-    height: 50px;
-    margin-left: 25px;
+.name h1 {
+    font-weight: 900;
+    margin-left: 2%;
+}
+
+.infor1 {
+    width: 500px;
+    height: 170px;
+    font-size: 13px;
+    /* background-color: yellow; */
+}
+
+.infor2 {
+    width: 200px;
+    height: 170px;
+    font-size: 13px;
+    /* background-color: pink; */
+}
+
+.infor3 {
+    width: 175px;
+    height: 170px;
+    font-size: 13px;
+    /* background-color: orange; */
+}
+
+.foot {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+
+.foot .corp {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    /* background-color: red; */
+}
+
+.foot .sns {
+    width:35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    /* background-color: lightblue; */
+}
+
+#foot {
+    width: 95%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    /* background-color: black; */
 }
 
 .sidenav {
@@ -102,91 +200,69 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color:#087e87;
+    background-color: #0c82a7;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-  }
-  
-  .sidenav a {
+}
+
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: white;
+    color: rgb(171, 171, 171);
     display: block;
     transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
+}
+
+.sidenav a:hover {
     color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
+}
+
+.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
+}
 
-  #main {
+#main {
     display: none;
-  }
-  
+}
+
 @keyframes slide {
     from {
-        left: -100px;
+        left: -50px;
         opacity: 0;
     }
 
     to {
-        left: 100px;
+        left: 50px;
         opacity: 1;
     }
 }
 
 @keyframes disappear {
     from {
-        left: 100px;
+        left: 50px;
         opacity: 1;
     }
 
     to {
-        left: -100px;
+        left: -50px;
         opacity: 0;
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .header {
-        display: none;
-    }
-
-    .section1 {
+@media screen and (max-width: 1040px) {
+    .section2 {
         width: 100%;
-        height: 75vh;
-        background-color: pink;
-          background: url("https://image.istarbucks.co.kr/img/event/2022/main_coffee_img_221114_1.jpg") fixed;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    
-    .intro {
-        margin-top: 180px;
+        height: 50vh;
     }
 
-    .footer {
-        flex-direction: column;
-        height: 230px;
-    }
-
-    .information {
-        width: 100%;
-    }
-
-    .sns {
-        width: 100%;
+    .slogan {
+        height: 550px;
     }
 
     .sidenav {
@@ -197,32 +273,128 @@ body {
         font-size: 18px;
     }
 
-    .wonder1 {
-        color: white;
-        font-size: 30px;
-        font-weight: 900;
-        margin-top: 40px;
-        margin-left: 10vw;
-        margin-right: 5vw;
+    #mySidenav {
+        z-index: 999;
     }
+}
 
-    #main {
-        transition: margin-left .5s;
-        padding: 16px;
+@media screen and (max-width: 950px) {
+    .header {
+        display: none;
+    }
+    
+    .main {
+        transition: margin-left 0.5s;
         background-color: #086A87;
-        color: white;
         position: fixed;
         width: 100%;
-        height: 40px;
+        height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         flex-direction: row;
-        margin-left: -10px;
-      }
+        z-index: 500;
+    }
 
-      #mySidenav {
-        z-index: 999;
-      }
+    #main {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    .intro {
+        font-size: 25px;
+        position: absolute;
+        top: 320px;
+    }
+
+    
+    .name {
+        padding: 0px;
+        /* background-color: gray; */
+    }
+
+    .name h1 {
+        margin-left: 5%;
+    }
+
+    .slogan {
+        height: 550px;
+    }
+
+    .section3 {
+        height: 55vh;
+    }
+    
+    .footer {
+        width: 100%;
+        height: 480px;
+    }
+    
+    #footer {
+        width: 90%;
+        height: 480px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer .infor2 {
+        height: 150px;
+    }
+
+    #footer .infor3 {
+        height: 130px;
+    }
+    
+    .infor1 {
+        width: 100%;
+        height: 200px;
+        /* background-color: pink; */
+    }
+
+    .infor2 {
+        width: 100%;
+        height: 200px;
+        /* background-color: greenyellow; */
+    }
+
+    .infor3 {
+        width: 100%;
+        height: 200px;
+        /* background-color: pink; */
+    }
+
+    .foot {
+        width: 100%;
+        height: 120px;
+    }
+
+    #foot {
+        width: 90%;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #foot .corp {
+        width: 300px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        /* background-color: orange; */
+    }
+
+    #foot .sns {
+        width: 200px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        /* background-color: lightblue; */
+    }
 }
