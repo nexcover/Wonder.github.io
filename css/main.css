@@ -326,6 +326,10 @@ h1 {
     .slogan {
         height: 550px;
     }
+    
+    .section2 {
+        height: 75vh;
+    }
 
     .section3 {
         height: 55vh;
