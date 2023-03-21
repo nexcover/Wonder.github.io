@@ -13,7 +13,7 @@
 
 .section21 {
     width: 100%;
-    height: 85vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     /* background-color: #086A87; */
@@ -30,37 +30,42 @@
     /* background-color: green; */
 }
 
-.food {
-    width: 20vw;
-    height: 35vh;
+.food0 {
+    position: relative;
+    width: 300px;
+    height: 300px;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
-    color: white;
     box-shadow: 10px 10px 10px dimgray;
+    /* background-color: greenyellow; */
+}
+.FStyle {
+    width: 100%;
+    position: absolute;
+    color: white;
+    padding: 20px;
 }
 
-.food img {
+.food {
     position: absolute;
-    top: -30%;
-    height: 160%;
-    filter: brightness(0.8);
+    width: 100%;
+    height: 100%;
+    background-image: url("https://ldb-phinf.pstatic.net/20211211_252/1639154724817CIEdl_JPEG/014B91D7-4689-46D5-98B2-BA97982014ED.jpeg");
+    background-size: cover;
+    filter: brightness(.8);
 }
 
-.food h2 {
-    position: absolute;
-    margin: 2rem;
+.FStyle h1 {
+    margin-bottom: 10px;
 }
 
-.food p {
-    position: absolute;
-    margin: 4.1rem 2rem 2rem;
+.FStyle p {
+    font-size: 1.5rem;
 }
 
-.food p:nth-child(4) {
-    position: absolute;
-    margin: 6rem 2rem 2rem;
-    font-size: 2rem;
+.FStyle p:nth-child(4) {
+    font-size: 1.5rem;
 }
 
 .food1 {
@@ -74,37 +79,51 @@
     background-color: yellow;
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1240px) {
     .section21 {
-        height: 120vh;
+        height: 140vh;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .section21 {
+        height: 160vh;
     }
 
-    .food {
-        width: 27vw;
+    .section20 {
+        height: 120px;
     }
 
-    .food1 {
-        display: flex;
-        background-color: white;
+    .section20 p {
+        top: 60%;
+    }
+
+    .food0 {
+        width: 45%;
     }
 }
 
 @media screen and (max-width: 750px) {
     .section21 {
-        height: 320vh;
+        height: 180vh;
+    }
+
+    .food0 {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .section21 {
+        height: 340vh;
+    }
+
+    .food0 {
+        width: 100%;
     }
 
     .food {
-        width: 100vw;
-    }
-
-    .food img {
-        width: 100%;
-        height: 200%;
-        top: -130px;
-    }
-
-    .food1 {
-        display: none;
+        background-position-y: 80%;
+        background-repeat: no-repeat;
     }
 }
