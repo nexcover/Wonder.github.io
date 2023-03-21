@@ -1,3 +1,5 @@
+// 첫 페이지 첫 화면
+
 let mainText = document.querySelector(".intro");
 
 window.addEventListener("scroll", function () {
@@ -12,3 +14,5 @@ window.addEventListener("scroll", function () {
         mainText.style.animation = 'slide 1s ease-out'
     }
 });
+
+

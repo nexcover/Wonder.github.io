@@ -7,12 +7,12 @@
 
 .carousel-item {
   --items: 10;
-  --width: clamp(150px, 23vh, 300px);
-  --height: clamp(200px, 30vh, 400px);
-  --x: calc(var(--active) * 800%);
-  --y: calc(var(--active) * 100%);
-  --rot: calc(var(--active) * 120deg);
-  --opacity: calc(var(--zIndex) / var(--items) * 3 - 1.5);
+  --width: clamp(150px, 30vh, 300px);
+  --height: clamp(200px, 40vh, 400px);
+  --x: calc(var(--active) * 250%);
+  --y: calc(var(--active) * -65%);
+  --rot: calc(var(--active) * 100deg);
+  --opacity: calc(var(--zIndex) / var(--items) * 5 - 0.5);
   overflow: hidden;
   position: absolute;
   z-index: var(--zIndex);

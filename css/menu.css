@@ -1,0 +1,111 @@
+.section20 {
+    width: 100%;
+    height: 25vh;
+    position: relative;
+}
+
+.section20 p {
+    font-size: 30px;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
+
+.section21 {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    /* background-color: #086A87; */
+}
+
+.box1 {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    /* background-color: green; */
+}
+
+.food {
+    width: 20vw;
+    height: 35vh;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    box-shadow: 10px 10px 10px dimgray;
+}
+
+.food img {
+    position: absolute;
+    top: -30%;
+    height: 160%;
+    
+    filter: brightness(0.8);
+}
+
+.food h2 {
+    position: absolute;
+    margin: 2rem;
+}
+
+.food p {
+    position: absolute;
+    margin: 4.1rem 2rem 2rem;
+}
+
+.food p:nth-child(4) {
+    position: absolute;
+    margin: 6rem 2rem 2rem;
+    font-size: 2rem;
+}
+
+.food1 {
+    display: none;
+    width: 27vw;
+    height: 35vh;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background-color: yellow;
+}
+
+@media screen and (max-width: 1040px) {
+    .section21 {
+        height: 120vh;
+    }
+
+    .food {
+        width: 27vw;
+    }
+
+    .food1 {
+        display: flex;
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .section21 {
+        height: 320vh;
+    }
+
+    .food {
+        width: 100vw;
+    }
+
+    .food img {
+        width: 100%;
+        height: 200%;
+        top: -130px;
+    }
+
+    .food1 {
+        display: none;
+    }
+}

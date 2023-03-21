@@ -2,7 +2,15 @@ body {
     margin: 0;
     font-family: sans-serif;
     overflow-x: hidden;
-    width: 100%;
+    width: 100%;      
+}
+
+body {
+    -ms-overflow-style:none;
+}
+
+body::-webkit-scrollbar {
+    display:none; 
 }
 
 p {
@@ -20,8 +28,14 @@ h1 {
     position: fixed;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     z-index: 500;
+    padding: 0;
+}
+
+.header p {
+    position: relative;
+    left: -3%;
 }
 
 .header p a {
@@ -36,8 +50,14 @@ h1 {
 }
 
 .wonder {
+    width: 270px;
+    height: 30px;
+    margin-left: 3%;
+}
+
+.wonder a {
     color: white;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 900;
 }
 
@@ -47,55 +67,35 @@ h1 {
     font-weight: 900;
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
-}
+/* .logo {
+    width: 230px;
+    height: 230px;
+} */
 
 .section1 {
     width: 100%;
     height: 85vh;
     margin: 0px;
     background-color: pink;
-    background: url(../img/w2.jpeg) fixed;
+    background: url(../img/w1.jpeg) fixed;
     background-size: cover;
+    filter: brightness(1);
 }
 
 .intro {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 30vw;
-    left: 50px;
-    text-align: left;
+    top: 150px;
     font-size: 40px;
     animation: slide 4s ease-out;
     color: white;
     font-weight: 700;
 }
 
-.section2 {
-    width: 100%;
-    height: 55vh;
-    background-image: url(../img/sc1.jpeg);
-    background-size: cover;
-    background-position: center;
-    color: white;;
+.intro p {
+    margin-bottom: 20px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slogan {
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.section2 p {
-    margin-top: 20px;
 }
 
 .section3 {
@@ -124,7 +124,7 @@ h1 {
 
 .name {
     width: 100%;
-    height: 100px;
+    height: 200px;
     display: flex;
     align-items: center;
     background-color: antiquewhite;
@@ -132,7 +132,7 @@ h1 {
 
 .name h1 {
     font-weight: 900;
-    margin-left: 2%;
+    margin-left: 2.5%;
 }
 
 .infor1 {
@@ -216,6 +216,23 @@ h1 {
     transition: 0.3s;
 }
 
+.sidenav a:nth-child(2) {
+    width: 100px;
+    margin-top: 30px;
+}
+
+.sidenav a:nth-child(3) {
+    width: 100px;
+}
+
+.sidenav a:nth-child(4) {
+    width: 100px;
+}
+
+.sidenav a:nth-child(5) {
+    width: 100px;
+}
+
 .sidenav a:hover {
     /* color: #f1f1f1; */
 }
@@ -234,24 +251,24 @@ h1 {
 
 @keyframes slide {
     from {
-        left: -50px;
+        top: 80px;
         opacity: 0;
     }
 
     to {
-        left: 50px;
+        top: 150px;
         opacity: 1;
     }
 }
 
 @keyframes disappear {
     from {
-        left: 50px;
+        top: 150px;
         opacity: 1;
     }
 
     to {
-        left: -50px;
+        top: 80px;
         opacity: 0;
     }
 }
@@ -264,22 +281,6 @@ h1 {
         background-color: pink;
         background: url(../img/cafe1.jpg) fixed;
         background-size: cover;
-    }
-    
-    .section2 {
-        width: 100%;
-        height: 75vh;
-        background-image: url(../img/cafe2.jpg);
-        background-size: cover;
-        color: white;;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .slogan {
-        height: 550px;
     }
 
     .sidenav {
@@ -309,18 +310,6 @@ h1 {
         background-size: cover;
     }
     
-    .section2 {
-        width: 100%;
-        height: 75vh;
-        background-image: url(../img/f8.jpg);
-        background-size: cover;
-        color: white;;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
     .main {
         transition: margin-left 0.5s;
         /* background-color: #086A87; */
@@ -344,14 +333,12 @@ h1 {
         justify-content: space-around;
     }
 
-
     .intro {
         font-size: 25px;
         position: absolute;
-        top: 320px;
+        top: 150px;
     }
 
-    
     .name {
         padding: 0px;
         /* background-color: gray; */
@@ -363,10 +350,6 @@ h1 {
 
     .slogan {
         height: 550px;
-    }
-
-    .section2 {
-        height: 75vh;
     }
 
     .section3 {
