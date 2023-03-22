@@ -1,14 +1,14 @@
 .section20 {
     width: 100%;
     height: 25vh;
-    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-.section20 p {
+.section20 h1 {
     font-size: 30px;
-    position: absolute;
-    top: 80%;
-    left: 5%;
+    position: relative;
+    top: 120px;
 }
 
 .section21 {
@@ -121,8 +121,13 @@
 }
 
 @media screen and (max-width: 570px) {
+    .section20 h1 {
+        position: relative;
+        top: 70px;
+    }
+    
     .section21 {
-        height: 2800px;
+        height: 2600px;
     }
 
     .food0 {
