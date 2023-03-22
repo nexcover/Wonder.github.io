@@ -79,9 +79,11 @@
     background-color: yellow;
 }
 
-@media screen and (max-width: 1240px) {
+
+
+@media screen and (max-width: 1350px) {
     .section21 {
-        height: 140vh;
+        height: 150vh;
     }
 }
 
@@ -105,7 +107,7 @@
 
 @media screen and (max-width: 750px) {
     .section21 {
-        height: 180vh;
+        height: 200vh;
     }
 
     .food0 {
@@ -115,7 +117,7 @@
 
 @media screen and (max-width: 570px) {
     .section21 {
-        height: 340vh;
+        height: 380vh;
     }
 
     .food0 {
