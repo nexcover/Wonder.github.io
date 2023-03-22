@@ -37,7 +37,7 @@
     border-radius: 20px;
     position: relative;
     overflow: hidden;
-    box-shadow: 10px 10px 10px dimgray;
+    /* box-shadow: 10px 10px 10px dimgray; */
     /* background-color: greenyellow; */
 }
 .FStyle {
@@ -80,6 +80,11 @@
 }
 
 
+@media screen and (min-width: 1470px) {
+    .section21 {
+        width: 1470px;
+    }
+}
 
 @media screen and (max-width: 1350px) {
     .section21 {
@@ -117,7 +122,7 @@
 
 @media screen and (max-width: 570px) {
     .section21 {
-        height: 380vh;
+        height: 2800px;
     }
 
     .food0 {
