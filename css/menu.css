@@ -1,8 +1,6 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .section20 {
@@ -30,7 +28,6 @@ body {
     width: 90%;
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0;
@@ -75,17 +72,6 @@ body {
     font-size: 1.5rem;
 }
 
-.food1 {
-    display: none;
-    width: 27vw;
-    height: 35vh;
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
-    color: white;
-    /* background-color: yellow; */
-}
-
 
 @media screen and (min-width: 1470px) {
     .section21 {
@@ -100,8 +86,13 @@ body {
 }
 
 @media screen and (max-width: 1140px) {
+    .section20 h1 {
+        position: relative;
+        top: 70px;
+    }
+    
     .section21 {
-        height: 160vh;
+        height: 200vh;
     }
 
     .section20 {
@@ -118,6 +109,11 @@ body {
 }
 
 @media screen and (max-width: 750px) {
+    .section20 h1 {
+        position: relative;
+        top: 70px;
+    }
+
     .section21 {
         height: 200vh;
     }
