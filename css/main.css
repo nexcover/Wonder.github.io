@@ -338,7 +338,7 @@ h1 {
     .intro {
         font-size: 25px;
         position: absolute;
-        top: 150px;
+        top: 20%;
     }
 
     .name {
