@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .section20 {
@@ -90,7 +91,7 @@ body {
         position: relative;
         top: 70px;
     }
-    
+
     .section21 {
         height: 200vh;
     }
