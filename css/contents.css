@@ -17,21 +17,6 @@
     /* background-color: pink; */
 }
 
-.BB {
-    width: 130px;
-    height: 40px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 100%;
-    margin-left: -60%;
-    top: 60%;
-    background-color: black;
-    opacity: 0.6;
-    font-weight: 700;
-}
 
 .box2 {
     width: 1300px;
@@ -52,6 +37,9 @@
     background-size: cover;
     filter: brightness(.8);
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: greenyellow;
 }
 
@@ -82,6 +70,20 @@
     background-color: greenyellow;
 }
 
+.BB {
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    top: 70px;
+    opacity: 0.6;
+    font-weight: 700;
+}
+
 @media screen and (max-width: 750px) {
     .coffee {
         width: 100%;
@@ -92,7 +94,7 @@
         width: 100%;
         height: 23%;  
     }
-
+    
     .coffee:nth-child(3) {
         width: 100%;
         height: 23%;
