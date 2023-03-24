@@ -82,6 +82,7 @@
     top: 70px;
     opacity: 0.6;
     font-weight: 700;
+    color: white;
 }
 
 @media screen and (max-width: 750px) {

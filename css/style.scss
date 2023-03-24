@@ -9,7 +9,7 @@
 .carousel {
     position: relative;
     // z-index: 1;
-    height: 55vh;
+    height: 100%;
     overflow: hidden;
     background-color: #086A87;
   }
@@ -95,6 +95,10 @@
     .carousel-item {
       --width: clamp(150px, 15vh,  300px);
       --height: clamp(200px, 23vh,  400px);
+    }
+
+    .carousel {
+      height: 100%;
     }
   }
   
