@@ -4,9 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/blur1.jpg);
-    background-size: cover;
-    /* background: plum; */
 }
 
 .swiper {
@@ -116,5 +113,7 @@
 } */
 
 @media screen and (max-width: 550px) {
-    
+    .section2 {
+        height: 250px;
+    }
 }

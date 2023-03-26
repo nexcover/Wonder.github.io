@@ -2,8 +2,7 @@
   position: relative;
   height: 100%;
   overflow: hidden;
-  background-image: url(../img/blur2.jpg);
-  background-size: cover;
+  background-color: #086A87;
 }
 
 .carousel-item {
