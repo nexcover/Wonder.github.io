@@ -11,7 +11,9 @@
     // z-index: 1;
     height: 100%;
     overflow: hidden;
-    background-color: #086A87;
+    background-image: url(../img/blur2.jpg);
+    background-size: cover;
+    // background-color: #086A87;
   }
   
   .carousel-item {
@@ -69,7 +71,7 @@
       bottom: 20px;
       left: 20px;
       transition: opacity .8s cubic-bezier(0, 0.02, 0, 1);
-      font-size: clamp(20px, 3vh, 30px);
+      font-size: clamp(20px, 3vw, 30px);
       text-shadow: 0 4px 4px rgba(0, 0, 0, .1);
     }
   
