@@ -1,0 +1,119 @@
+.section2 {
+    position: relative;
+    height: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    width: 1300px;
+    height: 100%;
+    /* background-color: pink; */
+}
+
+.swiper-button-next {
+    color: white;
+}
+
+.swiper-button-prev {
+    color: white;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1 {
+    width: 50%; 
+    height: 80%;
+    background-image: url(../img/f9.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+}
+
+.img2 {
+    width: 50%; 
+    height: 80%;
+    background-image: url(../img/c4.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+}
+
+.img3 {
+    width: 50%; 
+    height: 80%;
+    background-image: url(../img/s1.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+}
+
+.img4 {
+    width: 50%; 
+    height: 80%;
+    background-image: url(../img/sc2.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+}
+
+/* .swiper-pagination {
+
+} */
+
+/* #wrapper {
+    display: flex;
+    align-items: center;
+} */
+
+/* #img1 {
+    height: 100%;
+    border-radius: 40px;
+    background-image: url(../img/sc2.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#img2 {
+    height: 100%;
+    border-radius: 40px;
+    background-image: url(../img/f9.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#img3 {
+    height: 100%;
+    border-radius: 40px;
+    background-image: url(../img/c4.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#img4 {
+    height: 100%;
+    border-radius: 40px;
+    background-image: url(../img/s1.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 40px;
+} */
+
+@media screen and (max-width: 550px) {
+    .section2 {
+        height: 250px;
+    }
+}
