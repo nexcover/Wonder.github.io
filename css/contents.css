@@ -89,6 +89,9 @@
     }
 
     .section31 {
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
         height: 700px;
     }
 

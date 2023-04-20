@@ -287,13 +287,13 @@ h1 {
 
     .section1 {
         width: 100vw;
-        height: 770px;
+        height: 670px;
         margin: 0px;
         background-color: pink;
         background: url(../img/a20.JPG) fixed;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
-        background-position-y: -200px;
+        /* background-position-y: -200px;        */
     }
 
     .section3 {
