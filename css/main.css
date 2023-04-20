@@ -280,7 +280,7 @@ h1 {
     }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 750px) {
     .header {
         display: none;
     }
@@ -290,7 +290,7 @@ h1 {
         height: 100vh;
         margin: 0px;
         background-color: pink;
-        background-image: url(../img/a20.JPG) fixed;
+        background-image: url(../img/a20.JPG);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

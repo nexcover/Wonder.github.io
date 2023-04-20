@@ -91,7 +91,6 @@
     .section31 {
         background-size: cover;
         background-position: center;
-        background: fixed;
         width: 100vw;
         height: 100vh;
     }
