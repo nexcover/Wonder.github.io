@@ -286,7 +286,7 @@ h1 {
     }
 
     .section1 {
-        width: 100%;
+        width: 100vw;
         height: 770px;
         margin: 0px;
         background-color: pink;
