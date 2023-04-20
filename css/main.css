@@ -45,7 +45,7 @@ h1 {
     height: 100vh;
     margin: 0px;
     background-color: pink;
-    background: url(../img/w1-1.jpg) fixed;
+    background: url(../img/w1-1.jpg);
     background-size: cover;
     filter: brightness(1);
 }
@@ -263,7 +263,7 @@ h1 {
         height: 100vh;
         margin: 0px;
         background-color: pink;
-        background: url(../img/w1-1.jpg) fixed;
+        background: url(../img/w1-1.jpg);
         background-size: cover;
     }
 
@@ -291,10 +291,8 @@ h1 {
         margin: 0px;
         background-color: pink;
         background-image: url(../img/a20.JPG);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
-        /* background-position: center; */
-        /* background-position-y: -200px; */
     }
 
     .section3 {
