@@ -290,7 +290,7 @@ h1 {
         height: 100vh;
         margin: 0px;
         background-color: pink;
-        background: url(../img/a20.JPG) fixed;
+        background-image: url(../img/a20.JPG) fixed;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

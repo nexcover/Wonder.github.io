@@ -53,7 +53,7 @@ Click on Items
 --------------------*/
 $items.forEach((item, i) => {
     item.addEventListener('click', () => {
-        progress = (i / $items.length) * 130 + 10
+        progress = (i / $items.length) * 100 + 10
         animate()
     })
 })
@@ -61,11 +61,11 @@ $items.forEach((item, i) => {
 /*--------------------
 Handlers
 --------------------*/
-const handleWheel = e => {
-    const wheelProgress = e.deltaY * speedWheel
-    progress = progress + wheelProgress
-    animate()
-}
+// const handleWheel = e => {
+//     const wheelProgress = e.deltaY * speedWheel
+//     progress = progress + wheelProgress
+//     animate()
+// }
 
 const handleMouseMove = (e) => {
     if (e.type === 'mousemove') {
@@ -94,7 +94,7 @@ const handleMouseUp = () => {
 /*--------------------
 Listeners
 --------------------*/
-document.addEventListener('mousewheel', handleWheel)
+// document.addEventListener('mousewheel', handleWheel)
 document.addEventListener('mousedown', handleMouseDown)
 document.addEventListener('mousemove', handleMouseMove)
 document.addEventListener('mouseup', handleMouseUp)
